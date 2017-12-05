@@ -66,7 +66,7 @@ function result = f(rho0, L, x)
     % Set up options, if required
     options.reltol = 1e-6;
     options.abstol = 1e-8;
-    tlist = linspace(0, 10, 11);
+    tlist = linspace(0, 1e3, 1e3 + 1);
     ode2file('file1.dat', L, rho0, tlist, options);
     % Call the equation solver
     odesolve('file1.dat','file2.dat');

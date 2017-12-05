@@ -53,7 +53,7 @@ def setup(N):
 
 
 def f(psi0, H, x, J, options):
-    tlist = np.linspace(0, 10, 11)
+    tlist = np.linspace(0, 1e3, 1e3 + 1)
     exp_x = qt.mesolve(H, psi0, tlist, J, [x], options=options).expect[0]
     return exp_x
 

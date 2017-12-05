@@ -26,7 +26,7 @@ function setup(N)
 end
 
 function f(Ψ0, Hkin, Vx, J, Jdagger, x)
-    T = [0:1:10;]
+    T = [0:1:1e3;]
     exp_x = Float64[]
     fout(t, rho) = push!(exp_x, real(expect(x, rho)))
     H(t, Hkin, Vx) = Hkin + (1 + cos(t))*Vx

@@ -20,7 +20,7 @@ function result = f(Ncutoff)
     wl = 2;
     delta_c = wl - wc;
     alpha0 = 0.3 - 0.5j;
-    tspan = 0:1:10;
+    tspan = 0:1:1e3;
 
     a = destroy(Ncutoff);
     at = create(Ncutoff);

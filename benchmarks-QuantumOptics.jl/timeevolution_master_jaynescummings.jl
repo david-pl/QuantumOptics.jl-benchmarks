@@ -19,7 +19,7 @@ function f(N)
     κ = 0.5
     γ = 0.1
     n_th = 0.75
-    tspan = [0:1:10;]
+    tspan = [0:1:1e3;]
 
     b_cavity = FockBasis(N-1)
     b_atom = SpinBasis(1//2)

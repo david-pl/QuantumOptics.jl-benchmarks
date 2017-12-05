@@ -24,7 +24,7 @@ def f(N, options):
     wl = 2.
     # delta_c = wl - wc
     alpha0 = 0.3 - 0.5j
-    tspan = np.linspace(0, 10, 11)
+    tspan = np.linspace(0, 1e3, 1e3 + 1)
 
     a = qt.destroy(N)
     at = qt.create(N)

@@ -19,7 +19,7 @@ function f(N)
     ωl = 2.
     Δc = ωl - ωc
     α0 = 0.3 - 0.5im
-    tspan = [0:1.:10;]
+    tspan = [0:1.:1e3;]
 
     b = FockBasis(N-1)
     a = destroy(b)

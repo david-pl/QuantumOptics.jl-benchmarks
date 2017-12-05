@@ -23,7 +23,7 @@ def f(N, options):
     kappa = 0.5
     gamma = 0.1
     n_th = 0.75
-    tspan = np.linspace(0, 10, 11)
+    tspan = np.linspace(0, 1e3, 1e3 + 1)
 
     Ia = qt.qeye(2)
     Ic = qt.qeye(N)

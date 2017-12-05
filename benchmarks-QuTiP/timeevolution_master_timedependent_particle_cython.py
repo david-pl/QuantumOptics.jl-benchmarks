@@ -55,7 +55,7 @@ def setup(N):
 
 
 def f(psi0, Hkin, Vx, J, x, options):
-    tlist = np.linspace(0, 10, 11)
+    tlist = np.linspace(0, 1e3, 1e3 + 1)
     H = [Hkin,
             [Vx, "1 + np.cos(t)"]
         ]

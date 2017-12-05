@@ -20,7 +20,7 @@ function result = f(Ncutoff)
     kappa = 0.5;
     gamma = 0.1;
     n_th = 0.75;
-    tspan = 0:1:10;
+    tspan = 0:1:1e3;
 
     Ia = identity(2);
     Ic = identity(Ncutoff);

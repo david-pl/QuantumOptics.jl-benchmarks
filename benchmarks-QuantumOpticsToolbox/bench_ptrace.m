@@ -1,6 +1,6 @@
 
 function result = bench_ptrace()
-    name = 'ptrace';
+    name = 'ptrace_operator';
     cutoffs = [2:9];
     checks = [];
     result = [];

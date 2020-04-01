@@ -35,7 +35,7 @@ function f(N)
     αt = Float64[]
     fout(t, rho) = push!(αt, real(expect(a, rho)))
     H(t, n, a, at) = ωc*n + η*(a*exp(1im*ωl*t) + at*exp(-1im*ωl*t))
-    HJ(t::Float64, rho::DenseOperator) = (H(t, n, a, at), J, Jdagger)
+    HJ(t::Float64, rho) = (H(t, n, a, at), J, Jdagger)
     timeevolution.master_dynamic(tspan, Ψ0, HJ; rates=rates, fout=fout, reltol=1e-6, abstol=1e-8)
     αt
 end

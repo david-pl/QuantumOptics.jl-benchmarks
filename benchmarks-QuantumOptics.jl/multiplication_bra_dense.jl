@@ -19,7 +19,7 @@ function setup(N)
 end
 
 function f(op1, psi, result)
-    QuantumOpticsBase.gemv!(ComplexF64(1., 0.), psi, op1, ComplexF64(0., 0.), result)
+    QuantumOpticsBase.mul!(result,psi,op1)
 end
 
 println("Benchmarking: ", name)
